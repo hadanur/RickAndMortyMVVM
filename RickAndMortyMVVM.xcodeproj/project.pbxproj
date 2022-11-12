@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7414494291FAF06002F4E0D /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7414493291FAF06002F4E0D /* CharacterTableViewCell.swift */; };
+		B7414498291FAFD0002F4E0D /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7414497291FAFD0002F4E0D /* CharacterModel.swift */; };
+		B741449B291FB195002F4E0D /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741449A291FB195002F4E0D /* Webservice.swift */; };
+		B75F11AD2920534800DD5CE5 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F11AC2920534800DD5CE5 /* CharacterViewModel.swift */; };
+		B75F11B0292056B000DD5CE5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = B75F11AF292056B000DD5CE5 /* SDWebImage */; };
+		B75F11B2292056B000DD5CE5 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B75F11B1292056B000DD5CE5 /* SDWebImageMapKit */; };
 		B786A1C4291FA97100A96463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786A1C3291FA97100A96463 /* AppDelegate.swift */; };
 		B786A1C6291FA97100A96463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786A1C5291FA97100A96463 /* SceneDelegate.swift */; };
-		B786A1C8291FA97100A96463 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786A1C7291FA97100A96463 /* ViewController.swift */; };
+		B786A1C8291FA97100A96463 /* CharacterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786A1C7291FA97100A96463 /* CharacterVC.swift */; };
 		B786A1CB291FA97100A96463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B786A1C9291FA97100A96463 /* Main.storyboard */; };
 		B786A1CD291FA97200A96463 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B786A1CC291FA97200A96463 /* Assets.xcassets */; };
 		B786A1D0291FA97200A96463 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B786A1CE291FA97200A96463 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7414493291FAF06002F4E0D /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		B7414497291FAFD0002F4E0D /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		B741449A291FB195002F4E0D /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		B75F11AC2920534800DD5CE5 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		B786A1C0291FA97100A96463 /* RickAndMortyMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B786A1C3291FA97100A96463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B786A1C5291FA97100A96463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B786A1C7291FA97100A96463 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B786A1C7291FA97100A96463 /* CharacterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVC.swift; sourceTree = "<group>"; };
 		B786A1CA291FA97100A96463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B786A1CC291FA97200A96463 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B786A1CF291FA97200A96463 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,15 +41,84 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75F11B2292056B000DD5CE5 /* SDWebImageMapKit in Frameworks */,
+				B75F11B0292056B000DD5CE5 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B741448F291FAB26002F4E0D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B786A1C9291FA97100A96463 /* Main.storyboard */,
+				B786A1CE291FA97200A96463 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B7414490291FAB2E002F4E0D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B786A1C3291FA97100A96463 /* AppDelegate.swift */,
+				B786A1C5291FA97100A96463 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B7414491291FAB3E002F4E0D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B786A1CC291FA97200A96463 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B7414492291FAB81002F4E0D /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				B786A1C7291FA97100A96463 /* CharacterVC.swift */,
+				B75F11AC2920534800DD5CE5 /* CharacterViewModel.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		B7414495291FAF72002F4E0D /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B7414493291FAF06002F4E0D /* CharacterTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B7414496291FAFAE002F4E0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7414497291FAFD0002F4E0D /* CharacterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B7414499291FB182002F4E0D /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				B741449A291FB195002F4E0D /* Webservice.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		B75F11B3292063FC00DD5CE5 /* Episodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Episodes;
+			sourceTree = "<group>";
+		};
 		B786A1B7291FA97100A96463 = {
 			isa = PBXGroup;
 			children = (
+				B786A1D1291FA97200A96463 /* Info.plist */,
 				B786A1C2291FA97100A96463 /* RickAndMortyMVVM */,
 				B786A1C1291FA97100A96463 /* Products */,
 			);
@@ -56,13 +135,14 @@
 		B786A1C2291FA97100A96463 /* RickAndMortyMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				B786A1C3291FA97100A96463 /* AppDelegate.swift */,
-				B786A1C5291FA97100A96463 /* SceneDelegate.swift */,
-				B786A1C7291FA97100A96463 /* ViewController.swift */,
-				B786A1C9291FA97100A96463 /* Main.storyboard */,
-				B786A1CC291FA97200A96463 /* Assets.xcassets */,
-				B786A1CE291FA97200A96463 /* LaunchScreen.storyboard */,
-				B786A1D1291FA97200A96463 /* Info.plist */,
+				B7414499291FB182002F4E0D /* WebServices */,
+				B7414496291FAFAE002F4E0D /* Models */,
+				B7414495291FAF72002F4E0D /* TableViewCells */,
+				B7414491291FAB3E002F4E0D /* Assets */,
+				B7414490291FAB2E002F4E0D /* App */,
+				B741448F291FAB26002F4E0D /* UI */,
+				B7414492291FAB81002F4E0D /* Characters */,
+				B75F11B3292063FC00DD5CE5 /* Episodes */,
 			);
 			path = RickAndMortyMVVM;
 			sourceTree = "<group>";
@@ -83,6 +163,10 @@
 			dependencies = (
 			);
 			name = RickAndMortyMVVM;
+			packageProductDependencies = (
+				B75F11AF292056B000DD5CE5 /* SDWebImage */,
+				B75F11B1292056B000DD5CE5 /* SDWebImageMapKit */,
+			);
 			productName = RickAndMortyMVVM;
 			productReference = B786A1C0291FA97100A96463 /* RickAndMortyMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +195,9 @@
 				Base,
 			);
 			mainGroup = B786A1B7291FA97100A96463;
+			packageReferences = (
+				B75F11AE292056B000DD5CE5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = B786A1C1291FA97100A96463 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B786A1C8291FA97100A96463 /* ViewController.swift in Sources */,
+				B786A1C8291FA97100A96463 /* CharacterVC.swift in Sources */,
+				B75F11AD2920534800DD5CE5 /* CharacterViewModel.swift in Sources */,
+				B7414498291FAFD0002F4E0D /* CharacterModel.swift in Sources */,
+				B741449B291FB195002F4E0D /* Webservice.swift in Sources */,
 				B786A1C4291FA97100A96463 /* AppDelegate.swift in Sources */,
+				B7414494291FAF06002F4E0D /* CharacterTableViewCell.swift in Sources */,
 				B786A1C6291FA97100A96463 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +449,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B75F11AE292056B000DD5CE5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B75F11AF292056B000DD5CE5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B75F11AE292056B000DD5CE5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		B75F11B1292056B000DD5CE5 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B75F11AE292056B000DD5CE5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B786A1B8291FA97100A96463 /* Project object */;
 }
