@@ -44,7 +44,7 @@ extension EpisodeVC : EpisodeVMDelegate {
     
     func fetchEpisodeOnUnsuccess() {
         DispatchQueue.main.async {
-            self.makeAlert(title: "Error", message: "No internet Connection")
+            self.showAlert(title: "Error", message: "No internet Connection")
         }
     }
 }

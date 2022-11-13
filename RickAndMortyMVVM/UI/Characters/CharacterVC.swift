@@ -48,7 +48,7 @@ extension CharacterVC : CharacterVMDelegate {
     }
     func fetchCharacterOnUnsuccess() {
         DispatchQueue.main.async {
-            self.makeAlert(title: "Error", message: "No internet connection")
+            self.showAlert(title: "Error", message: "No internet connection")
         }
        }
 }
