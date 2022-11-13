@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Characters-->
+        <!--Rick And Morty Universe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CharacterVC" customModule="RickAndMortyMVVM" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fo7-8q-VmX">
-                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CharacterTableViewCell" rowHeight="131" id="aPg-Mq-RBa" customClass="CharacterTableViewCell" customModule="RickAndMortyMVVM" customModuleProvider="target">
@@ -131,16 +131,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fo7-8q-VmX" secondAttribute="bottom" id="wLz-H8-veq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Characters" image="clipboard.fill" catalog="system" id="2S0-NW-R8t"/>
+                    <navigationItem key="navigationItem" title="Rick And Morty Universe" id="r1b-Yv-bKz"/>
                     <connections>
                         <outlet property="tableView" destination="Fo7-8q-VmX" id="snk-9i-4JY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890.7692307692307" y="-436.49289099526067"/>
+            <point key="canvasLocation" x="2820" y="-436.49289099526067"/>
         </scene>
-        <!--Episodes-->
+        <!--Rick And Morty Universe-->
         <scene sceneID="r5t-Lr-BGi">
             <objects>
                 <viewController id="sUh-kq-9hI" customClass="EpisodeVC" customModule="RickAndMortyMVVM" customModuleProvider="target" sceneMemberID="viewController">
@@ -149,7 +149,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-Xw-Rgb">
-                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EpisodeTableViewCell" rowHeight="124" id="jWj-Nl-71U" customClass="EpisodeTableViewCell" customModule="RickAndMortyMVVM" customModuleProvider="target">
@@ -252,14 +252,14 @@
                             <constraint firstItem="TgL-Xw-Rgb" firstAttribute="top" secondItem="zcm-j4-7nK" secondAttribute="top" id="wCZ-Yi-vca"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Episodes" image="externaldrive.fill" catalog="system" id="Kpg-AJ-DFr"/>
+                    <navigationItem key="navigationItem" title="Rick And Morty Universe" id="Mh8-u2-iaH"/>
                     <connections>
                         <outlet property="tableView" destination="TgL-Xw-Rgb" id="AEP-M1-4cw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5HY-nq-6qo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1890.7692307692307" y="229.62085308056871"/>
+            <point key="canvasLocation" x="2820" y="229.62085308056871"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GZU-x2-GUt">
@@ -271,16 +271,16 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cxN-kO-PXk"/>
-                        <segue destination="sUh-kq-9hI" kind="relationship" relationship="viewControllers" id="SeG-YK-ZrX"/>
-                        <segue destination="45J-3Y-v1p" kind="relationship" relationship="viewControllers" id="B5F-dl-1zx"/>
+                        <segue destination="iyG-hw-v9x" kind="relationship" relationship="viewControllers" id="cxN-kO-PXk"/>
+                        <segue destination="MWC-aL-2T1" kind="relationship" relationship="viewControllers" id="SeG-YK-ZrX"/>
+                        <segue destination="Evk-pi-IAP" kind="relationship" relationship="viewControllers" id="B5F-dl-1zx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9p-1k-yjK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="872" y="4"/>
         </scene>
-        <!--Location-->
+        <!--Rick And Morty Universe-->
         <scene sceneID="OV2-X1-KqN">
             <objects>
                 <viewController id="45J-3Y-v1p" customClass="LocationVC" customModule="RickAndMortyMVVM" customModuleProvider="target" sceneMemberID="viewController">
@@ -289,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VLG-Za-aBB">
-                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LocationTableViewCell" rowHeight="163" id="Qxw-AD-4hg" customClass="LocationTableViewCell" customModule="RickAndMortyMVVM" customModuleProvider="target">
@@ -420,12 +420,69 @@
                             <constraint firstItem="Kum-Wp-Igb" firstAttribute="trailing" secondItem="VLG-Za-aBB" secondAttribute="trailing" id="xq7-z7-q5f"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Location" image="globe.asia.australia.fill" catalog="system" id="0NS-cR-t28"/>
+                    <navigationItem key="navigationItem" title="Rick And Morty Universe" id="btz-uJ-8SJ"/>
                     <connections>
                         <outlet property="tableView" destination="VLG-Za-aBB" id="aB3-3N-ccs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3h-Gg-Ehp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2820" y="907.81990521327009"/>
+        </scene>
+        <!--Characters-->
+        <scene sceneID="URK-ak-GCx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iyG-hw-v9x" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Characters" image="clipboard.fill" catalog="system" id="2S0-NW-R8t"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q9z-wn-XGd">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eEk-xH-b7g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a47-aF-4qj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890.7692307692307" y="-436.49289099526067"/>
+        </scene>
+        <!--Episodes-->
+        <scene sceneID="bNz-Ow-575">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MWC-aL-2T1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Episodes" image="externaldrive.fill" catalog="system" id="Kpg-AJ-DFr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sjZ-Tt-w7l">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sUh-kq-9hI" kind="relationship" relationship="rootViewController" id="Kjh-Yk-5Fd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVr-7p-HJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1890.7692307692307" y="229.62085308056871"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="Z66-VX-DoZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Evk-pi-IAP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Location" image="globe.asia.australia.fill" catalog="system" id="0NS-cR-t28"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YFP-Lh-bw0">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="45J-3Y-v1p" kind="relationship" relationship="rootViewController" id="V78-KP-OeN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fR9-j4-hoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1890.7692307692307" y="907.81990521327009"/>
         </scene>
