@@ -16,8 +16,9 @@ class LocationVC: UIViewController {
         tableView.delegate = self
         tableView.separatorStyle = .none
         tableView.dataSource = self
-        viewModel.fetchLocations()
         viewModel.delegate = self
+        viewModel.fetchLocations()
+        
     }
 }
 
@@ -32,7 +33,7 @@ extension LocationVC: UITableViewDelegate,UITableViewDataSource {
         let data = viewModel.locations[indexPath.row]
         cell.nameLabel.text = data.name
         
-        if cell.dimensionLabel.text == "unknown" {
+        if data.dimension == "unknown" {
             cell.dimensionLabel.text = "?"
         } else {
             cell.dimensionLabel.text = data.dimension
