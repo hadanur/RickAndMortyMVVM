@@ -38,8 +38,26 @@ class Webservice {
             } else if let data = data {
                 do {
                     let episodeList = try JSONDecoder().decode(EpisodeBase.self, from: data)
-                    print(episodeList)
                     completion(episodeList)
+                } catch {
+                    print(error.localizedDescription)
+                    print(String(describing: error))
+                }
+            }
+        }.resume()
+    }
+    
+    func downloadLocations(completion : @escaping (LocationBase?) -> ()) {
+        let url = URL(string: "https://rickandmortyapi.com/api/location")
+        URLSession.shared.dataTask(with: url!) { data, response, error in
+            if let error = error {
+                print(error.localizedDescription)
+                completion(nil)
+            } else if let data = data {
+                do {
+                    let locationList = try JSONDecoder().decode(LocationBase.self, from: data)
+                    print(locationList)
+                    completion(locationList)
                 } catch {
                     print(error.localizedDescription)
                     print(String(describing: error))
