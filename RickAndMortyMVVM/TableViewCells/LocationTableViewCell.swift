@@ -16,7 +16,7 @@ class LocationTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         locationView.layer.borderWidth = 0.5
-        locationView.layer.cornerRadius = 5
+        locationView.layer.cornerRadius = 8
         locationView.backgroundColor = .systemGray6
     }
 

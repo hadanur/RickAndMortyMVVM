@@ -15,7 +15,7 @@ class EpisodeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        episodeView.layer.cornerRadius = 5
+        episodeView.layer.cornerRadius = 8
         episodeView.layer.borderWidth = 0.5
         episodeView.backgroundColor = .systemGray6
     }

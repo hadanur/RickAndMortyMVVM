@@ -16,7 +16,7 @@ class CharacterTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        characterView.layer.cornerRadius = 5
+        characterView.layer.cornerRadius = 8
         characterView.layer.borderWidth = 0.5
         characterView.backgroundColor = .systemGray6
         characterImageView.layer.cornerRadius = 43
