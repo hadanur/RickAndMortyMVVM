@@ -9,7 +9,6 @@ import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
     @IBOutlet weak var characterView: UIView!
-    
     @IBOutlet weak var characterImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var speciesLabel: UILabel!
@@ -17,7 +16,10 @@ class CharacterTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        characterView.layer.cornerRadius = 3
+        characterView.layer.borderWidth = 0.5
+        characterView.backgroundColor = .systemGray6
+        characterImageView.layer.cornerRadius = 43
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
