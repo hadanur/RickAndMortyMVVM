@@ -15,15 +15,9 @@ class EpisodeVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
         viewModel.delegate = self
         viewModel.fetchEpisodes()
-    }
-    
-    func makeAlert(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okButton = UIAlertAction(title: "OK", style: .default)
-        alertController.addAction(okButton)
-        present(alertController, animated: true)
     }
 }
 

@@ -17,6 +17,7 @@
 		B75F11BE2920674500DD5CE5 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F11BD2920674500DD5CE5 /* EpisodeTableViewCell.swift */; };
 		B75F11C0292068A100DD5CE5 /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F11BF292068A100DD5CE5 /* EpisodeModel.swift */; };
 		B75F11C22920697C00DD5CE5 /* EpisodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F11C12920697C00DD5CE5 /* EpisodeViewModel.swift */; };
+		B75F11C52920E7C700DD5CE5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F11C42920E7C700DD5CE5 /* UIViewController+Extension.swift */; };
 		B786A1C4291FA97100A96463 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786A1C3291FA97100A96463 /* AppDelegate.swift */; };
 		B786A1C6291FA97100A96463 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786A1C5291FA97100A96463 /* SceneDelegate.swift */; };
 		B786A1C8291FA97100A96463 /* CharacterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B786A1C7291FA97100A96463 /* CharacterVC.swift */; };
@@ -34,6 +35,7 @@
 		B75F11BD2920674500DD5CE5 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 		B75F11BF292068A100DD5CE5 /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
 		B75F11C12920697C00DD5CE5 /* EpisodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeViewModel.swift; sourceTree = "<group>"; };
+		B75F11C42920E7C700DD5CE5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		B786A1C0291FA97100A96463 /* RickAndMortyMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B786A1C3291FA97100A96463 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B786A1C5291FA97100A96463 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 			children = (
 				B786A1C9291FA97100A96463 /* Main.storyboard */,
 				B786A1CE291FA97200A96463 /* LaunchScreen.storyboard */,
+				B75F11B6292066C200DD5CE5 /* Episodes */,
+				B7414492291FAB81002F4E0D /* Characters */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -127,10 +131,17 @@
 			path = Episodes;
 			sourceTree = "<group>";
 		};
+		B75F11C32920E7AC00DD5CE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B75F11C42920E7C700DD5CE5 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B786A1B7291FA97100A96463 = {
 			isa = PBXGroup;
 			children = (
-				B786A1D1291FA97200A96463 /* Info.plist */,
 				B786A1C2291FA97100A96463 /* RickAndMortyMVVM */,
 				B786A1C1291FA97100A96463 /* Products */,
 			);
@@ -147,14 +158,14 @@
 		B786A1C2291FA97100A96463 /* RickAndMortyMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				B75F11B6292066C200DD5CE5 /* Episodes */,
+				B75F11C32920E7AC00DD5CE5 /* Extensions */,
+				B786A1D1291FA97200A96463 /* Info.plist */,
 				B7414499291FB182002F4E0D /* WebServices */,
 				B7414496291FAFAE002F4E0D /* Models */,
 				B7414495291FAF72002F4E0D /* TableViewCells */,
 				B7414491291FAB3E002F4E0D /* Assets */,
 				B7414490291FAB2E002F4E0D /* App */,
 				B741448F291FAB26002F4E0D /* UI */,
-				B7414492291FAB81002F4E0D /* Characters */,
 			);
 			path = RickAndMortyMVVM;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75F11C52920E7C700DD5CE5 /* UIViewController+Extension.swift in Sources */,
 				B75F11BE2920674500DD5CE5 /* EpisodeTableViewCell.swift in Sources */,
 				B786A1C8291FA97100A96463 /* CharacterVC.swift in Sources */,
 				B75F11AD2920534800DD5CE5 /* CharacterViewModel.swift in Sources */,

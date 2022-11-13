@@ -17,17 +17,12 @@ class CharacterVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
         viewModel.delegate = self
         viewModel.fetchCharacters()
     }
-    
-    func makeAlert(title: String, message: String) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okButton = UIAlertAction(title: "OK", style: .default)
-        alertController.addAction(okButton)
-        present(alertController, animated: true)
     }
-}
+
 
 extension CharacterVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -15,7 +15,9 @@ class EpisodeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        episodeView.layer.cornerRadius = 3
+        episodeView.layer.borderWidth = 0.5
+        episodeView.backgroundColor = .systemGray6
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
